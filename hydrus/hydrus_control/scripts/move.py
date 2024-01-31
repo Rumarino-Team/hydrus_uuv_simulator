@@ -10,15 +10,16 @@ def publish_wrench():
     rate = rospy.Rate(10)
 
     wrench_msg = Wrench()
-    wrench_msg.force.x = 2000.0
+    wrench_msg.force.x = 0.0
     wrench_msg.force.y = 0.0
-    wrench_msg.force.z = 0.0
+    wrench_msg.force.z = -2000.0
     wrench_msg.torque.x = 0.0
     wrench_msg.torque.y = 0.0
     wrench_msg.torque.z = 0.0
 
     while not rospy.is_shutdown():
         wrench_pub.publish(wrench_msg)
+        print("published")
         rate.sleep()
 
 if __name__ == '__main__':
