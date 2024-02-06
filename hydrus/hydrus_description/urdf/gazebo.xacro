@@ -5,12 +5,12 @@
     <xacro:property name="hydrus_cob" value="0 0 0"/>
 
     <!-- Vehicle's actual volume (Gazebo cannot compute the volume out of the mesh) -->
-    <xacro:property name="hydrus_volume" value="0.009"/>
+    <xacro:property name="hydrus_volume" value="0.176681341"/>
 
     <!-- Describing the dimensions of the vehicle's bounding box -->
-    <xacro:property name="hydrus_length" value="0.80"/>
-    <xacro:property name="hydrus_width"  value="0.25"/>
-    <xacro:property name="hydrus_height" value="0.35"/>
+    <xacro:property name="hydrus_length" value="0.930"/>
+    <xacro:property name="hydrus_width"  value="0.436"/>
+    <xacro:property name="hydrus_height" value="0.434"/>
 
     <xacro:macro name="hydrus_hydro_model" params="namespace">
       <!-- List of hydrodynamic models this robot's links -->

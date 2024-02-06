@@ -8,36 +8,36 @@
           aware that Gazebo does not use the SNAME convention per default.
     -->
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="0">
-        <origin xyz="-0.243781 -0.170089 -0.054898" rpy="0 0 0" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="0" prop_mesh="Thruster_0.STL">
+        <origin xyz="0.40734 -0.19848 -0.034179" rpy="0.5236 -1.5708 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="1">
-        <origin xyz="0.210333 -0.17015 -0.054901" rpy="0 0 0" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="1" prop_mesh="Thruster_1.STL">
+        <origin xyz="0.40734 0.19853 -0.034179" rpy="0.5236 1.5708 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="2">
-      <origin xyz="0.211836 0.170263 -0.054903" rpy="0 0 0" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="2" prop_mesh="Thruster_2.STL">
+      <origin xyz="-0.43926 -0.19848 -0.034179" rpy="2.618 1.5708 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="3">
-      <origin xyz="-0.242183 0.17005 -0.05497" rpy="0 0 0" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="3" prop_mesh="Thruster_3.STL">
+      <origin xyz="-0.43926 0.19853 -0.0341" rpy="2.618 -1.5708 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="4">
-      <origin xyz="-0.437206 -0.198902 -0.033183" rpy="1.5707963267948966 0.5880026035475675 -2.158798930342464" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="4" prop_mesh="Thruster_4.STL">
+      <origin xyz="0.21106 0.16968 -0.053127" rpy="0 0 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="5">
-      <origin xyz="0.406277 -0.199528 -0.033572" rpy="1.5707963267948966 -0.5880026035475675 -0.982793723247329" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="5" prop_mesh="Thruster_5.STL">
+      <origin xyz="-0.43926 0.19853 -0.0341" rpy="0 0 0" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="6">
-      <origin xyz="0.406277 0.199528 -0.033572" rpy="-1.5707963267948966 -2.7828219865243244 4.35361831027057225" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="6" prop_mesh="Thruster_6.STL">
+      <origin xyz="-0.24297 -0.16962 -0.053127" rpy="0 0 3.1416" />
     </xacro:thruster_macro>
 
-    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="7">
-      <origin xyz="-0.437082 0.198902 -0.033183" rpy="-1.5707963267948966 -2.7828219865243244 -4.35361831027057225" />
+    <xacro:thruster_macro robot_namespace="${namespace}" thruster_id="7" prop_mesh="Thruster_7.STL">
+      <origin xyz="0.21106 -0.16962 -0.053127" rpy="0 0 3.1416" />
     </xacro:thruster_macro>
 
 </robot>

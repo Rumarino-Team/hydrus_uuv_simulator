@@ -5,14 +5,14 @@ from geometry_msgs.msg import Wrench
 def publish_wrench():
     rospy.init_node('wrench_publisher', anonymous=True)
 
-    wrench_pub = rospy.Publisher('rexrov2/thruster_manager/input', Wrench, queue_size=10)
+    wrench_pub = rospy.Publisher('hydrus/thruster_manager/input', Wrench, queue_size=10)
 
     rate = rospy.Rate(10)
 
     wrench_msg = Wrench()
     wrench_msg.force.x = 0.0
     wrench_msg.force.y = 0.0
-    wrench_msg.force.z = -2000.0
+    wrench_msg.force.z = -200.0
     wrench_msg.torque.x = 0.0
     wrench_msg.torque.y = 0.0
     wrench_msg.torque.z = 0.0

@@ -13,7 +13,7 @@
     Vehicle's parameters (remember to enter the model parameters below)
   -->
 
-  <xacro:property name="mass" value="18.062"/>
+  <xacro:property name="mass" value="17.0395783829616"/>
   <!-- Center of gravity -->
   <xacro:property name="cog" value="0 0 0"/>
   <!-- Fluid density -->
@@ -25,7 +25,7 @@
     the mesh pose will have to be corrected below in the <visual> block.
     Open the meshes for the RexROV vehicle in Blender to see an example on the mesh placement.
   -->
-  <xacro:property name="visual_mesh_file" value="file://$(find hydrus_description)/meshes/hydrus.dae"/>
+  <xacro:property name="visual_mesh_file" value="file://$(find hydrus_description)/meshes/base_link.STL"/>
 
   <!-- Collision geometry mesh, usually in STL format (it is recommended to keep
   this geometry as simple as possible to improve the performance the physics engine
@@ -43,17 +43,17 @@
         -->
         <inertial>
           <origin
-            xyz="-0.0112530988980815 0.0132378868039223 -2.68860266712125E-07"
+            xyz="-0.0117233052541944 7.1124481605241E-06 0.00733571544142573"
             rpy="0 0 0" />
-          <mass
-            value="15.3383002922666" />
-          <inertia
-            ixx="0.0706822953893134"
-            ixy="-2.96658977041411E-09"
-            ixz="4.67785743955219E-06"
-            iyy="0.121380901460858"
-            iyz="1.1891293253612E-09"
-            izz="0.134256272071966" />
+            <mass
+              value="17.0395783829616" />
+            <inertia
+              ixx="0.0720341913567931"
+              ixy="-4.66388174692384E-06"
+              ixz="-2.98192347513836E-09"
+              iyy="0.135463514450081"
+              iyz="5.80636474001404E-10"
+              izz="0.122654380562112" />
         </inertial>
 
         <visual>

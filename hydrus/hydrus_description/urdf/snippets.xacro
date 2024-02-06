@@ -19,11 +19,11 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
   <!-- Thruster joint and link snippet --> 
   <xacro:macro name="thruster_macro"
-    params="robot_namespace thruster_id *origin">
+    params="robot_namespace thruster_id prop_mesh *origin">
     <xacro:thruster_module_first_order_basic_fcn_macro
       namespace="${namespace}"
       thruster_id="${thruster_id}"
-      mesh_filename="file://$(find hydrus_description)/meshes/prop.dae"
+      mesh_filename="file://$(find hydrus_description)/meshes/${prop_mesh}"
       dyn_time_constant="0.05"
       rotor_constant="0.026546960744430276">
       <xacro:insert_block name="origin"/>
