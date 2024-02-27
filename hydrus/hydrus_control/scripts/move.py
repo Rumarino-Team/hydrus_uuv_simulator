@@ -12,7 +12,7 @@ def publish_wrench():
     wrench_msg = Wrench()
     wrench_msg.force.x = 0.0
     wrench_msg.force.y = 0.0
-    wrench_msg.force.z = -200.0
+    wrench_msg.force.z = 20.0
     wrench_msg.torque.x = 0.0
     wrench_msg.torque.y = 0.0
     wrench_msg.torque.z = 0.0

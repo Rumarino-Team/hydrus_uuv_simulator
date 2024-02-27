@@ -6,8 +6,6 @@ RUN apt update && apt install -y\
  ros-melodic-smach-ros\
  ros-melodic-executive-smach\
  ros-melodic-smach-viewer\
- ros-melodic-moveit\
- ros-melodic-moveit-visual-tools\
  vim\
  nano\
  python-rosdep\
@@ -21,7 +19,7 @@ RUN apt update && apt install -y\
 
 # Update dependencies
 RUN rosdep update
-RUN apt-get update && apt-get dist-upgrade
+RUN apt-get update && apt-get dist-upgrade -y
 
 RUN useradd -ms /bin/bash uuv
 
@@ -35,11 +33,8 @@ RUN . /opt/ros/melodic/setup.sh && \
 
 # Download ROS packages
 WORKDIR /home/uuv/catkin_ws/src
-RUN git clone https://github.com/ros-planning/moveit_tutorials.git -b melodic-devel
-RUN git clone https://github.com/ros-planning/panda_moveit_config.git -b melodic-devel
 RUN git clone https://github.com/uuvsimulator/uuv_simulator.git
 RUN git clone https://github.com/uuvsimulator/uuv_simulation_evaluation.git
-RUN git clone https://github.com/uuvsimulator/desistek_saga.git
 RUN git clone https://github.com/uuvsimulator/rexrov2.git
 
 # Fix issue with uuv_simulator_evaluation
