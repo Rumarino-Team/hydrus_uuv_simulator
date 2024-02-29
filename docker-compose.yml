@@ -13,6 +13,7 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./waypoint_test:/home/uuv/catkin_ws/src/waypoint_test
       - ./hydrus:/home/uuv/catkin_ws/src/hydrus
+      - ./robosub-world:/home/uuv/catkin_ws/src/robosub-world
     privileged: true
     stdin_open: true # docker run -i
     tty: true        # docker run -t
